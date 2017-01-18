@@ -1,0 +1,40 @@
+!!!5
+%html{class:"no-js", lang:"es"}
+	%head
+		%meta{charset:"utf-8"}
+		%title Corad Meeting Planner
+		%meta{name:"description", content:"Corad meeting planner."}
+		%link{rel:"stylesheet", href:"css/normalize.css"}
+		%link{rel:"stylesheet", href:"css/bootstrap.css"}
+		%link{rel:"stylesheet", href:"css/flexboxgrid.min.css"}
+		%link{rel:"stylesheet", href:"css/style.css"}
+		%meta{naem:"viewport",content:"width=divice-width, initial-scale=1"}
+		%script{src:"js/jquery-2.1.1.min.js"}
+		%script{src:"js/modernizr-custom.js"}
+	%body
+		="<!--[if lt IE 9]>"
+		%p{class:"blowserupgrade"}
+		Estus usando un navegador 
+		%strong desactualizado.
+		Por favor
+		%a{href:"http://browsehpappy.com/"}
+			actualiza tu navegador
+		para una mejor esperiencia
+		="<![endif]-->"
+		.video-container
+			%video{autoplay:"true", loop:"true",poster:"videos/snapshots/mar.jpg"}
+				%source{src:"videos/mp4/mar.mp4", type:"video/mp4"}
+				%source{src:"videos/web/mar.webm", type:"video/webm"}
+		.row.full-height.middle-xs.center-xs.relative.up
+			.col-xl-12
+				.box
+					%img{src:"img/logo.png"}
+					%h1.wihte-text.title.no-margin Corad Meeting Planner
+					%p.lema.wihte-text.no-margin "You will find everything in the same place"
+		%nav.fixed.top.right.wihte-text.navigation#navigation
+			%ul.list-inline
+				%li Inicio
+				%li Servicios
+				%li Identidad
+				%li Eventos
+				%li Contacto
